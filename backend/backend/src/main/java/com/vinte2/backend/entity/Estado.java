@@ -1,6 +1,6 @@
 package com.vinte2.backend.entity;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -13,7 +13,7 @@ import javax.persistence.TemporalType;
 import lombok.Data;
 
 @Entity
-@Table(name= "Estado")
+@Table(name= "estado")
 @Data
 public class Estado {
 
@@ -23,10 +23,10 @@ public class Estado {
 
     private String nome;
     private String sigla;
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date DataCriacao;
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date DataAtualizacao;
+    @Temporal(TemporalType.DATE)
+    private Date dataCriacao;
+    @Temporal(TemporalType.DATE)
+    private Date dataAtualizacao;
 
     
 }
