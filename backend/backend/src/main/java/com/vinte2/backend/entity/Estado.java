@@ -13,7 +13,7 @@ import javax.persistence.TemporalType;
 import lombok.Data;
 
 @Entity
-@Table(name= "estado")
+@Table(name= "Estado")
 @Data
 public class Estado {
 
